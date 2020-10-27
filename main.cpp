@@ -66,3 +66,20 @@ double function_variant_4_with_sin(const double x) {
 
 const double LOWER = -2.;
 const double UPPER = 0.;
+
+int main() {
+    cout << "Variant 4.\nFunction 1: cos(x)*th(x), interval: ["
+         << LOWER << " " << UPPER << "]\n";
+    srand(time(nullptr));
+    auto result_1 = simulatedAnnealingMethod(LOWER, UPPER, function_variant_4);
+    cout << "Result: Xmin = " << result_1.first
+         << ", Fmin = " << result_1.second << '\n';
+
+    cout << "\nFunction 2: cos(x)*th(x)*sin(5*x), interval: ["
+         << LOWER << " " << UPPER << "]\n";
+    auto result_2 = simulatedAnnealingMethod(LOWER, UPPER, function_variant_4_with_sin);
+    cout << "Result: Xmin = " << result_2.first
+         << ", Fmin = " << result_2.second << '\n';
+
+    return 0;
+}
