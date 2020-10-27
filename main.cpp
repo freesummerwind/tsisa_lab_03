@@ -55,3 +55,14 @@ auto simulatedAnnealingMethod(const double lower, const double upper,
     cout << std::string(47, '-') << '\n';
     return std::pair{x_i, func(x_i)};
 }
+
+double function_variant_4(const double x) {
+    return cos(x) * tanh(x);
+}
+
+double function_variant_4_with_sin(const double x) {
+    return function_variant_4(x) * sin(5*x);
+}
+
+const double LOWER = -2.;
+const double UPPER = 0.;
