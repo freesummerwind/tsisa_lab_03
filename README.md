@@ -27,4 +27,3 @@
 ![alt text](screenshots/lab_03_16.png "Таблица для функции 2")
 ![alt text](screenshots/lab_03_17.png "Таблица для функции 2")
 ![alt text](screenshots/lab_03_18.png "Таблица для функции 2")
-2
